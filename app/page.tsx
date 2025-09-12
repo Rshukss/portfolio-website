@@ -43,29 +43,62 @@ export default function ResearchPortfolio() {
         </div>
       </header>
 
-      <main className="container mx-auto px-4 md:px-6 py-8">
+      <main className="container mx-auto px-4 md:px-6 py-2">
         {/* Hero Section */}
-        <section id="about" className="py-12 md:py-20">
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-            <div className="space-y-6">
+        <section id="about" className="py-3 md:py-6">
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
+            <div className="space-y-5">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Rahul Shukla</h1>
-              <p className="text-xl text-muted-foreground">Passionate about bridging AI innovation and healthcare impact</p>
-              <p className="text-lg text-muted-foreground max-w-[600px]">
-                Welcome to my homepage! I'm Rahul Shukla, a Master's student in Data Science at the University of Pennsylvania focused on advancing multimodal AI systems for healthcare, with my current interests in
-                vision-language models that enhance clinical reasoning, diagnostics, and patient outcomes. Presently, I serve as a research assistant at Shen Labs, collaborating with Dr. Li Shen, and postdoctoral researcher, 
-                Dr. Bojian Hu, where we are developing solutions to address insufficient alignment between visual and textual modalities in medical vision-language models and expanding their capacity to process 
-                complex 3D clinical imaging data.
+
+              {/* Unified body font size (text-lg) starts here */}
+              <p className="text-lg text-muted-foreground">
+                Passionate about bridging AI innovation and healthcare impact
               </p>
+
+              <p className="text-lg text-foreground text-justify">
+                Welcome to my homepage! I'm Rahul Shukla, a Master's student in Data Science at the University of Pennsylvania,
+                where I pursue research pushing the boundaries of <span className="font-semibold text-black dark:text-white/90">AI for healthcare</span>.
+              </p>
+
+              <p className="text-lg text-foreground text-justify">
+                I find joy in solving problems that improve people's lives and make healthcare more reliable and interpretable. In doing so, my work spans across three complementary axes:
+              </p>
+
+              <ul className="space-y-4 text-lg text-foreground">
+                <li className="text-justify">
+                  <span className="font-semibold text-foreground">Natural Language Processing & Large Language Models (LLMs): </span>
+                  I develop LLMs and agentic AI systems that integrate external tools and structured protocols (e.g., Model Context Protocol) to support clinical reasoning,
+                  decision support, and reliable healthcare applications.
+                </li>
+                <li className="text-justify">
+                  <span className="font-semibold text-foreground">Healthcare Machine Learning: </span>
+                  I work on methods for modeling complex biomedical and clinical data, with a focus on EHRs, structured priors,
+                  and feature engineering. By building models that capture the nuances of real-world healthcare data, I aim to improve
+                  predictive performance while ensuring interpretability—so that machine learning can meaningfully assist clinicians in
+                  delivering better and more equitable care.
+                </li>
+                <li className="text-justify">
+                  <span className="font-semibold text-foreground">Deep Learning & Multimodal AI: </span>
+                  I explore advances in transformer architectures, diffusion models, and multimodal learning (language, imaging,
+                  and signals) to enable more expressive representations of biomedical data. I am particularly interested in how these methods
+                  can bridge heterogeneous modalities to provide richer diagnostic insights and guide
+                  personalized treatment strategies that directly impact patient outcomes.
+                </li>
+              </ul>
+
+              <p className="text-lg text-foreground text-justify">
+                In my spare time, I enjoy playing chess (I've represented India at the World Schools Chess Championship!), soccer and watching anime XD.
+              </p>
+
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <a href="https://scholar.google.com/citations?user=fLK1fMcAAAAJ&hl=en">View Research</a>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="/cv.pdf" target="_blank" rel="noreferrer">
-                    Download CV
-                  </a>
+                  <a href="/cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
                 </Button>
               </div>
+
               <div className="flex items-center space-x-4">
                 <Button variant="outline" size="sm" asChild>
                   <a href="https://www.linkedin.com/in/rshukss/" target="_blank" rel="noreferrer">
@@ -83,15 +116,17 @@ export default function ResearchPortfolio() {
                   </a>
                 </Button>
               </div>
+
               <div className="flex items-center space-x-1 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
                 <span>Philadelphia, Pennsylvania</span>
               </div>
             </div>
+
             <div className="flex justify-center">
               <div className="relative">
                 <Image
-                  src="/IMG_4441.PNG"
+                  src="/headshot.JPG"
                   alt="Professional headshot"
                   width={400}
                   height={400}
@@ -117,20 +152,20 @@ export default function ResearchPortfolio() {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
                       <Brain className="h-4 w-4 text-primary" />
-                      <span className="text-sm font-medium">LLMs & Deep Learning</span>
+                      <span className="text-sm font-medium">LLMs & Agentic AI</span>
                     </div>
                     <div className="pl-6 space-y-2">
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Prompt Engineering
+                        Prompt Engineering & Zero Shot Learning
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Deep Generative Models
+                        LLM Finetuning & Uncertainty Quantification
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Computer Vision
+                        LLM Interpretability & Reasoning
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Attention Mechanisms
+                        Agent Communication Protocols
                       </Badge>
                     </div>
                   </div>
@@ -138,17 +173,17 @@ export default function ResearchPortfolio() {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
                       <BookOpen className="h-4 w-4 text-primary" />
-                      <span className="text-sm font-medium">Healthcare AI</span>
+                      <span className="text-sm font-medium">Deep Learning & Computer Vision</span>
                     </div>
                     <div className="pl-6 space-y-2">
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Biomedical VLMs
+                        Diffusion Models
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Biostatistics
+                        Object Detection & Recognition
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Bioinformatics
+                        Multimodal Vision Language Models
                       </Badge>
                     </div>
                   </div>
@@ -160,10 +195,10 @@ export default function ResearchPortfolio() {
                     </div>
                     <div className="pl-6 space-y-2">
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Model Evaluation & Validation
+                        Feature Engineering & Structured Priors
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
-                        Hypothesis Testing
+                        Modeling & Visualizing Complex Data
                       </Badge>
                       <Badge variant="outline" className="text-xs block w-fit">
                         Statistical Learning Theory
@@ -179,10 +214,10 @@ export default function ResearchPortfolio() {
                   </div>
                   <div className="pl-6 space-y-2">
                     <Badge variant="outline" className="text-xs block w-fit">
-                      3D Medical VLMs
+                      Enhancing 3D Medical VLMs
                     </Badge>
                     <Badge variant="outline" className="text-xs block w-fit">
-                      Multimodal AI for Healthcare
+                      Deploying Multimodal LLMs via MCP
                     </Badge>
                   </div>
                 </div>
@@ -203,22 +238,21 @@ export default function ResearchPortfolio() {
                       <div className="flex items-start justify-between">
                         <div className="space-y-1">
                           <CardTitle className="text-lg">
-                            Enhancing Medical Vision-Language Models through 3D-Aware Architecture and Contrastive
-                            Cross-Modal Alignment
+                            Adapting Vision-Language Models for 3D CT/MRI Understanding on PMBB via
+                            Slice Selection and Explanation Analysis
                           </CardTitle>
-                          <CardDescription>ACM BCB • 2025</CardDescription>
+                          <CardDescription>ICCV Workshop: Vision-Based AI for Digital Health • 2025</CardDescription>
                         </div>
-                        <Badge variant="secondary">In Review</Badge>
+                        <Badge variant="secondary">Accepted</Badge>
                       </div>
                     </CardHeader>
                     <CardContent className="pl-6">
-                      <p className="text-sm text-muted-foreground mb-4">
-                        This project focuses on enhancing medical vision-language models by developing a novel 3D-aware architecture combined with contrastive cross-modal alignment to improve 
-                        understanding of volumetric medical imaging and associated clinical texts. The approach addresses challenges in processing unstructured datasets like PMBB by integrating
-                        volumetric CT and MRI data with rich textual information from radiology reports. My work mostly focused around dataset preparation which involved preparing and 
-                        standardizing the volumetric scans, performing advanced prompt engineering to extract ground truth diagnoses and multi-turn conversations from clinical documents, and 
-                        implementing preprocessing pipelines to align image-text pairs across modalities. These contributions laid the foundation for training and benchmarking models such as 
-                        Med3Dvlm, MedFlamingo, and LoGra-Med.
+                      <p className="text-sm text-foreground mb-4">
+                        This project focuses on enhancing medical vision-language models by constructing a large-scale 3D-aware corpus and developing tailored training strategies for clinical reasoning. 
+                        I structured the Penn Medicine BioBank into a scalable dataset by hierarchically pairing 103,827 CT/MRI scans with 10,050 radiology reports, generating instruction-following, 
+                        disease-aware multi-turn conversations with LLaMA-3.2-3B, and consolidating over 2,000 raw disease labels into 50 clinically meaningful categories using 
+                        GPT-4o. I also assisted in implementing a two-stage training pipeline: first aligning 2D visual features with reports by training the multimodal projector alone, then refining 
+                        both the projector and Vicuna-1.5B on diagnostic reasoning dialogues while keeping the vision encoder frozen.
                       </p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         <Badge variant="outline" className="text-xs">
@@ -268,7 +302,7 @@ export default function ResearchPortfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="pl-6">
-                      <p className="text-sm text-muted-foreground mb-4">
+                      <p className="text-sm text-foreground mb-4">
                         This project presents an integrated AI system for elderly care, combining fall detection, assistive chatbot, and emotion recognition modules. The fall detection leverages 
                         the YOLOv7 model with keypoint extraction and dynamic pose estimation to achieve 95.3% accuracy. The chatbot employs a feed-forward neural network with dropout and a Jaccard 
                         similarity retrieval system to handle low-confidence queries effectively. Emotion recognition uses custom features and CNN-based classification, achieving high precision and 
@@ -323,7 +357,7 @@ export default function ResearchPortfolio() {
                       </div>
                     </CardHeader>
                     <CardContent className="pl-6">
-                      <p className="text-sm text-muted-foreground mb-4">
+                      <p className="text-sm text-foreground mb-4">
                         This project presents a unified prediction system for multiple diseases—such as Heart Disease, Diabetes, Breast Cancer, and Parkinson’s—using machine learning models 
                         including SVM, Logistic Regression, Random Forest, and Decision Trees. The system leverages PCA-based dimensionality reduction and correlation analysis to improve 
                         efficiency without compromising accuracy, and is deployed as an interactive Streamlit web application.
@@ -380,18 +414,19 @@ export default function ResearchPortfolio() {
                   <div className="flex items-center space-x-2">
                     <Calendar className="h-5 w-5" />
                     <div>
-                      <CardTitle className="text-lg">Research Intern</CardTitle>
+                      <CardTitle className="text-lg">AI Research Intern</CardTitle>
                       <CardDescription>Siemens Healthineers • Jun 2025 - Present</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Currently contributing to research-intensive projects aimed at transforming healthcare delivery
-                    through advanced simulation and optimization techniques. My work involves designing and implementing
-                    a flexible framework to simulate and optimize clinical patient workflows, improving AI-based
-                    large-scale search algorithms, and developing scalable software services to manage distributed
-                    search jobs on high-performance computing infrastructure.
+                  <p className="text-sm text-foreground">
+                    Currently developing an MCP-based architecture for LLM-driven patient visit simulation by integrating Ollama-hosted models with hospital facility data 
+                    to track room usage and generate real-time insights on operational readiness. As part of this work, I use LangGraph and LangChain to design agents 
+                    that communicate via MCP and rely on MCPHost to bridge HTTP and MCP protocols for safe and accurate insight generation.Previously, I designed and 
+                    implemented a workflow engine to generalize MRI and CT scanning processes across outpatient and inpatient settings at Penn Medicine and Princeton 
+                    Hospitals. This system applied a Finite State Machine (FSM) architecture to model the complete patient journey, from scheduling through scan 
+                    completion and results delivery.
                   </p>
                 </CardContent>
               </Card>
@@ -407,7 +442,7 @@ export default function ResearchPortfolio() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-foreground">
                     Assisted in the development of a novel 3D-aware vision-language model for the unstructured PMBB dataset. My work primarily focused on dataset preparation, which involved
                     extracting and standardizing volumetric CT and MRI scans, sophisticated prompt engineering to retrieve ground truth diagnosis & multi-turn conversation from corresponding
                     clinical notes and radiology reports, and implementing preprocessing pipelines to align image-text pairs across diverse modalities. I also contributed to designing data 
@@ -422,13 +457,13 @@ export default function ResearchPortfolio() {
                   <div className="flex items-center space-x-2">
                     <Calendar className="h-5 w-5" />
                     <div>
-                      <CardTitle className="text-lg">Research Intern</CardTitle>
+                      <CardTitle className="text-lg">C.S.E Research Intern</CardTitle>
                       <CardDescription>Indian Institute of Technology, Bombay • Jan 2023 - June 2023</CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-foreground">
                     Assisted in the development of a GPU resource management system by extending nebuly-ai’s Kubernetes GPU device plugin to support NVIDIA’s Multi-Process Service (MPS), 
                     enabling fine-grained GPU partitioning by compute (vCore%) and memory (vMem). My work primarily focused on modifying the plugin to allow dynamic allocation of GPU 
                     resources across multiple containers in serverless machine learning workloads. I containerized a range of ML tasks — including image recognition, speech-to-text, 
@@ -446,7 +481,7 @@ export default function ResearchPortfolio() {
 
       {/* Footer */}
       <footer className="border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row px-6 md:px-12">
           <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
             <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
               © 2025 Rahul Shukla. All rights reserved.
