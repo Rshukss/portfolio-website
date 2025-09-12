@@ -45,7 +45,7 @@ export default function ResearchPortfolio() {
 
       <main className="container mx-auto px-4 md:px-6 py-2">
         {/* Hero Section */}
-        <section id="about" className="py-3 md:py-6">
+        <section id="about" className="py-1 md:py-3">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
             <div className="space-y-5">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Rahul Shukla</h1>
