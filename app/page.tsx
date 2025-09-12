@@ -126,7 +126,7 @@ export default function ResearchPortfolio() {
             <div className="flex justify-center">
               <div className="relative">
                 <Image
-                  src="/headshot.jpg"
+                  src="headshot.jpg"
                   alt="Professional headshot"
                   width={400}
                   height={400}
