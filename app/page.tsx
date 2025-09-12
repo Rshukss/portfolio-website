@@ -46,9 +46,9 @@ export default function ResearchPortfolio() {
       <main className="container mx-auto px-4 md:px-6 py-2">
         {/* Hero Section */}
         <section id="about" className="py-1 md:py-3">
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
-            <div className="space-y-5">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Rahul Shukla</h1>
+          <div className="grid gap-8 lg:grid-cols-12 items-center">
+            <div className="col-span-9 space-y-5">
+              <h1 className="text-2xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Rahul Shukla</h1>
 
               {/* Unified body font size (text-lg) starts here */}
               <p className="text-lg text-muted-foreground">
@@ -58,9 +58,6 @@ export default function ResearchPortfolio() {
               <p className="text-lg text-foreground text-justify">
                 Welcome to my homepage! I'm Rahul Shukla, a Master's student in Data Science at the University of Pennsylvania,
                 where I pursue research pushing the boundaries of <span className="font-semibold text-black dark:text-white/90">AI for healthcare</span>.
-              </p>
-
-              <p className="text-lg text-foreground text-justify">
                 I find joy in solving problems that improve people's lives and make healthcare more reliable and interpretable. In doing so, my work spans across three complementary axes:
               </p>
 
@@ -90,7 +87,7 @@ export default function ResearchPortfolio() {
                 In my spare time, I enjoy playing chess (I've represented India at the World Schools Chess Championship!), soccer and watching anime XD.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" asChild>
                   <a href="https://scholar.google.com/citations?user=fLK1fMcAAAAJ&hl=en">View Research</a>
                 </Button>
@@ -115,7 +112,7 @@ export default function ResearchPortfolio() {
                     <Mail className="h-4 w-4" />
                   </a>
                 </Button>
-              </div>
+              </div> */}
 
               <div className="flex items-center space-x-1 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
@@ -123,7 +120,7 @@ export default function ResearchPortfolio() {
               </div>
             </div>
 
-            <div className="flex justify-center">
+            <div className="col-span-3 flex justify-center">
               <div className="relative">
                 <Image
                   src="headshot.jpg"
@@ -133,7 +130,37 @@ export default function ResearchPortfolio() {
                   className="rounded-full border-4 border-white shadow-xl object-cover"
                   style={{ aspectRatio: "1 / 1" }}
                 />
+                <div className="container pt-12">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Button size="lg" asChild>
+                      <a href="https://scholar.google.com/citations?user=fLK1fMcAAAAJ&hl=en">View Research</a>
+                    </Button>
+                    <Button variant="outline" size="lg" asChild>
+                      <a href="/cv.pdf" target="_blank" rel="noreferrer">Download CV</a>
+                    </Button>
+                  </div>
+                </div>
+                <div className="container pt-4">
+                  <div className="flex items-center space-x-4">
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="https://www.linkedin.com/in/rshukss/" target="_blank" rel="noreferrer">
+                        <Linkedin className="h-4 w-4" />
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="https://github.com/Rshukss" target="_blank" rel="noreferrer">
+                        <Github className="h-4 w-4" />
+                      </a>
+                    </Button>
+                    <Button variant="outline" size="sm" asChild>
+                      <a href="mailto:rshuks@seas.upenn.edu">
+                        <Mail className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div> 
+                </div>
               </div>
+              
             </div>
           </div>
         </section>
