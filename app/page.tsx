@@ -84,7 +84,7 @@ export default function ResearchPortfolio() {
               </ul>
 
               <p className="text-lg text-foreground text-justify">
-                In my spare time, I enjoy playing chess (I've represented India at the World Schools Chess Championship!), soccer and watching anime XD.
+                In my spare time, I enjoy playing chess (I've represented India at the World Schools Championship!), soccer & watching anime XD.
               </p>
 
               {/* <div className="flex flex-col sm:flex-row gap-4">
@@ -114,10 +114,10 @@ export default function ResearchPortfolio() {
                 </Button>
               </div> */}
 
-              <div className="flex items-center space-x-1 text-sm text-muted-foreground">
+              {/* <div className="flex items-center space-x-1 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4" />
                 <span>Philadelphia, Pennsylvania</span>
-              </div>
+              </div> */}
             </div>
 
             <div className="col-span-3 flex justify-center">
@@ -158,6 +158,10 @@ export default function ResearchPortfolio() {
                       </a>
                     </Button>
                   </div> 
+                  <div className="flex items-center space-x-1 text-sm text-muted-foreground mt-3">
+                    <MapPin className="h-4 w-4" />
+                    <span>Philadelphia, Pennsylvania</span>
+                  </div>
                 </div>
               </div>
               
