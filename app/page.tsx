@@ -64,7 +64,7 @@ export default function ResearchPortfolio() {
               <ul className="space-y-4 text-lg text-foreground">
                 <li className="text-justify">
                   <span className="font-semibold text-foreground">Natural Language Processing & Large Language Models (LLMs): </span>
-                  I develop LLMs and agentic AI systems that integrate external tools and structured protocols (e.g., Model Context Protocol) to support clinical reasoning,
+                  I enjoy working with LLMs and agentic AI systems that integrate external tools and structured protocols (e.g., Model Context Protocol) to support clinical reasoning,
                   decision support, and reliable healthcare applications.
                 </li>
                 <li className="text-justify">
